@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./env/Lib/site-packages",
+        "./src"
+    ]
+}
