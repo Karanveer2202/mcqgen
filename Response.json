@@ -1,33 +1,24 @@
 {
     "1": {
-        "mcq": "multiple choice question",
-        "options": {
-            "a": "choice here",
-            "b": "choice here",
-            "c": "choice here",
-            "d": "choice here"
-        },
-        "correct": "correct answer"
+        "question": "Example question?",
+        "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+        "correctAnswer": "Option 1"
     },
 
-    "2": {
-        "mcq": "multiple choice question",
-        "options": {
-            "a": "choice here",
-            "b": "choice here",
-            "c": "choice here",
-            "d": "choice here"
-        },
-        "correct": "correct answer"
+    "2":{
+        
+            "question": "Example question?",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "correctAnswer": "Option 1"
+        
     },
-    "3": {
-        "mcq": "multiple choice question",
-        "options": {
-            "a": "choice here",
-            "b": "choice here",
-            "c": "choice here",
-            "d": "choice here"
-        },
-        "correct": "correct answer"
+
+    "3":{
+        
+            "question": "Example question?",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "correctAnswer": "Option 1"
+        
     }
 }
+
