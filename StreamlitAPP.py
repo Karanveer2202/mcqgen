@@ -68,7 +68,7 @@ with st.form("user_inputs"):
                             # Convert DataFrame to JSON
                             json_data = df.to_json(orient="records", indent=4)
                             # Save JSON to a local file
-                            json_file_path = 'C:/Users/karan/OneDrive/Documents/Code/Gen_AI_Projects/mcq-quiz-main/src/mcq_data.json'
+                            json_file_path = 'C:/Users/karan/OneDrive/Documents/Code/Gen_AI_Projects/mcq-quiz-main/public/mcq_data.json'
                             with open(json_file_path, 'w') as json_file:
                                 json_file.write(json_data)
                             st.success(f"Data saved to {json_file_path}")
