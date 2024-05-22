@@ -58,8 +58,7 @@ with st.form("user_inputs"):
                     # Extract the quiz data from the response
                     quiz = response.get("quiz", None)
                     if quiz is not None:
-                        quiz_str = json.dumps(quiz)
-                        table_data = get_table_data(quiz_str)
+                        table_data = get_table_data(quiz)
                         if table_data:
                             df = pd.DataFrame(table_data, columns=["MCQ", "Choices", "Correct"])
                             df.index = df.index + 1

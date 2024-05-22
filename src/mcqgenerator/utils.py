@@ -25,10 +25,14 @@ def read_file(file):
         )
         
 
-def get_table_data(quiz_str):
+def get_table_data(quiz):
     try:
-        # Convert the quiz string to a dictionary
-        quiz_dict = json.loads(quiz_str)
+        # Ensure the quiz is a dictionary
+        if isinstance(quiz, str):
+            quiz_dict = json.loads(quiz)
+        else:
+            quiz_dict = quiz
+
         quiz_table_data = []
 
         # Iterate over the quiz dictionary and extract the required information
