@@ -27,21 +27,19 @@ def read_file(file):
 
 def get_table_data(quiz_str):
     try:
-        #convert the quiz-from-a-str to dict
-        quiz_dict=json.loads(quiz_str)
-        quiz_table_data=[]
+        # Convert the quiz string to a dictionary
+        quiz_dict = json.loads(quiz_str)
+        quiz_table_data = []
 
-        #iterate over the quiz dictionary and extract the required information
-
+        # Iterate over the quiz dictionary and extract the required information
         for key, value in quiz_dict.items():
-            mcq=value["mcq"]
-            options=" || ".join(
-                    [
-                        f"[option)> (option_value)" for option, option_value in value["options"].items()
-                    ]
+            mcq = value["mcq"]
+            options = " || ".join(
+                [
+                    f"{option}: {option_value}" for option, option_value in value["options"].items()
+                ]
             )
-
-            correct=value["correct"]
+            correct = value["correct"]
             quiz_table_data.append({"MCQ": mcq, "Choices": options, "Correct": correct})
 
         return quiz_table_data
