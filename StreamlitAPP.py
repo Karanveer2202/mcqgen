@@ -69,3 +69,4 @@ with st.form("user_inputs"):
                             st.error("Error in the table data")
                 else:
                     st.write(response)
+
