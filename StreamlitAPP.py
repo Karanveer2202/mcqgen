@@ -9,7 +9,7 @@ import streamlit as st
 from src.mcqgenerator.utils import read_file,get_table_data
 from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 from src.mcqgenerator.logger import logging
-
+from langchain.globals import set_llm_cache, get_llm_cache
 #loading json file
 with open('C:/Users/karan/OneDrive/Documents/Code/Gen_AI_Projects/mcqgen/Response.json','r') as file:
     RESPONSE_JSON = json.load(file)
@@ -75,3 +75,4 @@ with st.form("user_inputs"):
                 
                 else:
                     st.write(response)
+
